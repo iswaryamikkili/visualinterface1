@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visualization of Counties in US</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Include D3.js from CDN -->
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/topojson/3.0.2/topojson.min.js"></script>
+    "></script>
+
+</head>
+<body>
+
+    <!-- Main title -->
+    <div class="title">Visualization of Counties in US</div>
+
+    <!-- Dropdowns and Update Button -->
+    <div class="dropdowns-container">
+        <select id="attribute1">
+            <option value="">Select Attribute 1</option>
+        </select>
+        <select id="attribute2">
+            <option value="">Select Attribute 2</option>
+        </select>
+        <button id="updateBtn">Update Visualizations</button>
+    </div>
+
+    <!-- Main visualization layout -->
+    <div class="container">
+        <div class="left">
+            <div class="box">
+                <h3>Choropleth Map 1</h3>
+                <div id="map1"></div>
+            </div>
+            <div class="box">
+                <h3>Choropleth Map 2</h3>
+                <div id="map2"></div>
+                
+            </div>
+        </div>
+
+        <div class="right">
+            <div class="box">
+                <h3>Bar Chart</h3>
+                <div id="barChartContainer"></div>
+            </div>
+            <div class="box">
+                <h3>Scatterplot</h3>
+                <div id="scatterPlotContainer"></div>
+            </div>
+        </div>
+    </div>
+   
+    <script src="js/barChart.js"></script>
+    <script src="js/scatterPlot.js"></script>
+    <script src="js/choroplethMap.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+</html>
